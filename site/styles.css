@@ -1,0 +1,74 @@
+body {
+	background-color: white;
+	font-family: Helvetica
+
+}
+
+h1 {
+	text-align: center;
+}
+
+
+.chicken, .beef, .pork {
+	background-color: gray;
+	border: 1px solid black;
+	text-align: center;
+	float: left;
+	box-sizing: border-box;
+}
+.chickentitle {
+	background-color: pink;
+}
+
+.beeftitle {
+	background-color: red;
+}
+
+.porktitle {
+	background-color: yellow;
+}
+
+h2 {
+	float: right;
+	margin: -2px;
+	border: 1px solid black;
+	padding: 2px;
+
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 20px;
+	clear: right;
+}
+
+li {
+	margin: 10px;
+}
+
+
+@media (min-width: 992px) {
+	.chicken, .beef, .pork {
+		width: 30.33%;
+		margin: 1.5%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.chicken, .beef {
+		width: 45%;
+		margin: 2.5%;
+	}
+	.pork {
+		width: 95%;
+		margin: 0 2.5% 0 2.5%;
+	}
+}
+
+@media (max-width: 767px) {
+		.chicken, .beef, .pork {
+		width: 90%;
+		margin: 10px 5% 10px 5%;
+	}
+}
